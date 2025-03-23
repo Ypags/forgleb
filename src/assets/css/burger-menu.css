@@ -1,4 +1,4 @@
-.burger-menu {
+.burger-menu__span {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -8,7 +8,7 @@
 	cursor: pointer;
 }
 
-.burger-menu span {
+.burger-menu__span span {
 	position: absolute;
 	height: 2px;
 	width: 100%;
@@ -16,7 +16,7 @@
 	transition: all 0.3s ease;
 }
 
-.burger-menu::before {
+.burger-menu__span::before {
 	content: '';
 	position: absolute;
 	top: 6px;
@@ -26,11 +26,11 @@
 	transition: all 0.3s ease;
 }
 
-.active span {
+.active__span span {
 	scale: 0;
 }
 
-.burger-menu::after {
+.burger-menu__span::after {
 	content: '';
 	position: absolute;
 	top: 22px;
@@ -40,12 +40,25 @@
 	transition: all 0.3s ease;
 }
 
-.active::before {
+.active__span::before {
 	top: 50%;
 	rotate: -45deg;
 }
 
-.active::after {
+.active__span::after {
 	top: 50%;
 	rotate: 45deg;
+}
+
+/* Настройка меню */
+
+.burger-menu {
+	position: absolute;
+	inset: -1000px 0 0 0;
+	transition: all 0.3s ease;
+}
+
+.active__menu {
+	position: absolute;
+	inset: 100px 0 0 0;
 }

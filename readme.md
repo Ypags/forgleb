@@ -2,6 +2,10 @@
 
 Мультистраничный сайт, без функционала
 
+## Ссылка на сайт 
+
+https://ypags.github.io/forgleb/src/index.html
+
 ## Ссылка на дизайн проекта
 
 https://www.figma.com/design/HFl2RRwbVpXjOIfT4oQylN/Untitled?node-id=0-1&t=bcknES4Or7PO6kMv-1
